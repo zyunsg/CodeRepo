@@ -7,7 +7,7 @@ plotly.offline.init_notebook_mode(connected=True)
 name='decile report',
 version='0.1',
 description='decile report (decile stats, K-S, gain, and lift charts plotting on Jupyter)',
-url='',
+url='https://github.com/zyunsg/utilities/edit/master/decilereport.py',
 author='Zhang Yun',
 email='zyunsg@gmail.com'
 date: 20/03/2018
