@@ -8,7 +8,7 @@ name='decile report',
 version='0.1',
 description='decile report (decile stats, K-S, gain, and lift charts plotting on Jupyter)',
 url='https://github.com/zyunsg/utilities/edit/master/decilereport.py',
-author='Zhang Yun',
+author='zyunsg',
 email='zyunsg@gmail.com'
 date: 20/03/2018
 '''
