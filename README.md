@@ -2,7 +2,7 @@
 
 
 ### decilereport.py 
-description: to generate **decile stats**, **K-S**, **Gain**, and **Lift Charts**
+to generate **decile stats**, **K-S**, **Gain**, and **Lift Charts**
 
      ```
      import decilereport as dr     
