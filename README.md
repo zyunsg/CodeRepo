@@ -1,7 +1,8 @@
-# utilities
-useful functions
+# Utility Functions
 
-1. **decilereport.py**: to generate **decile stats**, **K-S**, **gain**, and **lift charts**.
+
+### decilereport.py 
+description: to generate **decile stats**, **K-S**, **Gain**, and **Lift Charts**
      ```
      import decilereport as dr
      
