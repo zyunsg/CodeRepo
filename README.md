@@ -6,7 +6,7 @@ to generate **decile stats**, **K-S**, **Gain**, and **Lift Charts**.
 + decile stats only:
     ```
      import decilereport as dr
-     dstats = dr.decilestats(y_df_train.values, temp)
+     dstats = dr.decilestats(y_true, y_pred)
     ```
 + decile stats & charts:
     ```
