@@ -1,4 +1,6 @@
-# Utility Functions
+# Utility Functions 
+
+### utility function list:
 1. load_csv
 2. quick_look
 3. numStats
@@ -10,7 +12,7 @@
 import utility as utl
 ```
 
-+ load_csv: load csv dataset
++ **load_csv**: load csv dataset
 ```
 from utility import load_csv
 
@@ -18,7 +20,7 @@ data_path = '../data/in/'
 df_train = load_csv(data_path, 'train.csv')
 df_test = load_csv(data_path, 'test.csv')
 ```
-+ quick_look: quickly check following data information 
++ **quick_look**: quickly check following data information 
   + data shape
   + data preview
   + data types
@@ -36,7 +38,7 @@ coord_f = train_dtype['coord_f']
 dtime_f = train_dtype['dtime_f']
 label_f = train_dtype['label_f']
 ```
-+ numStats: stats description for numeric variables
++ **numStats**: stats description for numeric variables
 ```
 from utility import numStats
 
@@ -44,20 +46,20 @@ num_f = ['a', 'A_6m_tamt_Giro', 'b', 'c']
 numStats(df_train, num_f)
 ```
    
-+ catVcount: check distribution for category variables 
++ **catVcount**: check distribution for category variables 
 ```
 from utility import catVcount
 
 cat_f = ['a', 'b', 'c']
 catVcount(data, cat_f[0])
 ```
-+ underSampling: underSamping unbalanced dataset
++ **underSampling**: underSamping unbalanced dataset
 ```
 from utility import underSampling
 
 train = underSampling(df_train, 'event', k=5)
 ```
-+ decilereport, decilestats, decilegraph: generate decile report
++ **decilereport**, **decilestats**, **decilegraph**: generate decile report
 ```
 from utility import decilestats, decilegraph, decilereport
 
