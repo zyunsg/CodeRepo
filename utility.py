@@ -23,8 +23,8 @@ def load_csv(path, data):
     
     *example:
     data_path = '/sandbox/cbgba/Modeling/Users/zhangyun/CR/data/in/'
-    df_train = load_data(data_path, 'TRAIN.csv')
-    df_test = load_data(data_path, 'TEST.csv')
+    df_train = load_csv(data_path, 'TRAIN.csv')
+    df_test = load_csv(data_path, 'TEST.csv')
     
     '''
     csv_path = os.path.join(path, data)
