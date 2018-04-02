@@ -7,6 +7,7 @@
 4. catVcount: check distribution for category variables 
 5. underSampling: underSamping unbalanced dataset
 6. decilestats, decilegraph, decilereport: generate decile report
+7. plot_roc_curve: plot roc curve with its auc score
 
 + **load_csv**
 ```
@@ -64,4 +65,12 @@ dstats, ks_g, gain_g, lift_g = decilereport(y_true, y_pred)
 plotly.offline.iplot(ks_g, filename='ks_chart')
 plotly.offline.iplot(gain_g, filename='gain_chart')
 plotly.offline.iplot(lift_g, filename='lift_chart')
+```
++ **plot_roc_curve**:
+```
+from utility import plot_roc_curve
+
+plot_roc_curve(y_train, pred_train, 'train')
+plot_roc_curve(y_val, pred_val, 'val')
+plot_roc_curve(y_test, pred_test, 'test')
 ```
