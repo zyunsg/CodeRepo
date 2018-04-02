@@ -2,13 +2,15 @@
 # file name: utility.py
 # author: zyun
 # date created: 3/20/2018
-# date last modified: 3/29/2018
+# date last modified: 02/04/2018
 # python version: 2.7
 
 import os
 import pandas as pd
 import plotly
 import plotly.graph_objs as go
+import matplotlib.pyplot as plt
+from sklearn import metrics
 plotly.offline.init_notebook_mode(connected=True)
 
 
@@ -318,3 +320,24 @@ def decilereport(y_true, y_pred, group=10, ks_f=True, gain_f=True, lift_f=True):
 
     return s1, g1, g2, g3
 
+def plot_roc_curve(y_true, y_pred, label=None):
+    '''
+    plot roc curve
+    y_true:
+    y_pred:
+    
+    *example:
+    plot_roc_curve(y_train, pred_train, 'train')
+    plot_roc_curve(y_val, pred_val, 'val')
+    plot_roc_curve(y_test, pred_test, 'test')
+    '''
+    auc_score = metrics.roc_auc_score(y_true, y_pred)
+    fpr, tpr, thresholds = metrics.roc_curve(y_true, y_pred)
+    
+    plt.plot(fpr, tpr, linewidth=2, label=label+'-auc: {:.2%}'.format(auc_score))
+    plt.plot([0, 1], [0, 1], 'k--')
+    plt.axis([0, 1, 0, 1])
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('ROC Curve')
+    plt.legend(loc='lower right')
