@@ -2,11 +2,12 @@
 
 This is my general workflow code repo for basic tasks, will update correspondingly. Lazy~~
 
-## 01_ETL
-## 02_EDA
-## 03_FeatureSelection
+### 01_ETL
+### 02_EDA
+### 03_FeatureSelection
 
-## 04_FeaturePreprocessing
+### 04_FeaturePreprocessing
+
 + Handling Missing Value
   a. numeric: fill  with median(*mean or specific value)
   b. object: fill with 'Missing'
@@ -22,7 +23,7 @@ This is my general workflow code repo for basic tasks, will update corresponding
 + Text
 + Datetime
 
-## 05_Modeling
+### 05_Modeling
 + Tree Based
   a. RandomForest
   b. GBDT(lightGBM)
@@ -30,7 +31,7 @@ This is my general workflow code repo for basic tasks, will update corresponding
   a. Linear
   b. Neural Network
   
-## 06_Evaluation
+### 06_Evaluation
 + Classification 
   a. roc curve, auc score (only work for binary)
   b. precison & recall
