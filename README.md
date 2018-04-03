@@ -4,13 +4,20 @@ This is my workflow code repo for some general tasks, will update correspondingl
 
 ### 01_ETL
 ### 02_EDA
++ Quickly Check: data shape, types, etc.
++ Numeric
+  + stats
++ Categorical 
+  + category count/ratio
+  
 ### 03_FeatureSelection
++ Iterative RandomForest feature importance selection
 
 ### 04_FeaturePreprocessing
 + Handling Missing Value
   + numeric: fill  with median(*mean or specific value)
   + object: fill with 'missing'
-+ Numerci
++ Numeric
   + `Tree-based` models doesn't depend on scaling, while `non-tree-based` models hugely depend on scaling.
   + MinMaxScaler to [0,1]
   + StandardScaler to mean=0, std=1
