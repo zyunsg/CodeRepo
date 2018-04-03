@@ -32,7 +32,6 @@ This is my workflow code repo for some general tasks, will update correspondingl
 ### 05_Modeling
 + Tree Based
   + RandomForest
-  + GBDT(lightGBM)
 + Non-Tree Based
   + Linear
   + Neural Network
